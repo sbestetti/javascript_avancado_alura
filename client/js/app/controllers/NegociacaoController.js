@@ -14,15 +14,15 @@ class NegociacaoController {
         
         event.preventDefault();
 
+        let dataConvertida = new Date(this._data.value.split("-"));       
+
         let negociacao = new Negociacao(
-            this._data,
-            this._quantidade,
-            this._valor
+            dataConvertida,
+            this._quantidade.value,
+            this._valor.value
         );
 
-        console.log(negociacao);
-        
-        
+        console.log(negociacao);        
 
     }
 
