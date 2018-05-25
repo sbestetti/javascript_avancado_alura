@@ -1,3 +1,4 @@
+//Git test change
 class Negociacao {
     
     constructor(data, quantidade, valor) {
